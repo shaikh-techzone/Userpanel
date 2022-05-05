@@ -9,6 +9,14 @@ const flash = require('connect-flash');
 const home = require('./routes/home')
 const about = require('./routes/about')
 const joblist = require('./routes/job-list')
+const collegelist = require('./routes/college-list')
+const internshiplist = require('./routes/internship-list')
+const scholarshiplist = require('./routes/scholarship-list')
+const unilist = require('./routes/university-list')
+
+
+
+
 
 
 
@@ -50,6 +58,15 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 app.use('/', home);
 app.use('/', about);
 app.use('/', joblist);
+app.use('/', collegelist);
+app.use('/', internshiplist);
+app.use('/', scholarshiplist);
+app.use('/', unilist);
+
+
+
+
+
 
 
 
