@@ -7,6 +7,10 @@ const flash = require('connect-flash');
 
 //Importing Routes
 const home = require('./routes/home')
+const about = require('./routes/about')
+const joblist = require('./routes/job-list')
+
+
 
 //Creating express app
 const app = express();
@@ -43,6 +47,11 @@ mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
     })
     .catch((err) => console.log('Error: ', err));
 
-    app.use('/', home);
+app.use('/', home);
+app.use('/', about);
+app.use('/', joblist);
+
+
+
 
 
