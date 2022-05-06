@@ -1,6 +1,7 @@
 <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
   <div class="container">
     <div class="row gy-5 gx-4">
+      <!-- <input type="hidden" name="id" value="<%= job._id%>" /> -->
       <div class="col-lg-8">
         <div class="d-flex align-items-center mb-5">
           <img
@@ -10,41 +11,27 @@
             style="width: 80px; height: 80px"
           />
           <div class="text-start ps-4">
-            <h3 class="mb-3">Marketing Manager</h3>
+            <h3 class="mb-3"><%= job.title%></h3>
             <span class="text-truncate me-3"
-              ><i class="fa fa-map-marker-alt text-primary me-2"></i>New York,
-              USA</span
+              ><i class="fa fa-map-marker-alt text-primary me-2"></i><%=
+              job.location%></span
             >
             <span class="text-truncate me-3"
-              ><i class="far fa-clock text-primary me-2"></i>Full Time</span
+              ><i class="far fa-clock text-primary me-2"></i><%=
+              job.job_nature%></span
             >
             <span class="text-truncate me-0"
-              ><i class="far fa-money-bill-alt text-primary me-2"></i>$123 -
-              $456</span
+              ><i class="far fa-money-bill-alt text-primary me-2"></i><%=
+              job.salary_range%></span
             >
           </div>
         </div>
 
         <div class="mb-5">
           <h4 class="mb-3">Job description</h4>
-          <p>
-            Dolor justo tempor duo ipsum accusam rebum gubergren erat. Elitr
-            stet dolor vero clita labore gubergren. Kasd sed ipsum elitr clita
-            rebum ut sea diam tempor. Sadipscing nonumy vero labore invidunt
-            dolor sed, eirmod dolore amet aliquyam consetetur lorem, amet elitr
-            clita et sed consetetur dolore accusam. Vero kasd nonumy justo rebum
-            stet. Ipsum amet sed lorem sea magna. Rebum vero dolores dolores
-            elitr vero dolores magna, stet sea sadipscing stet et. Est voluptua
-            et sanctus at sanctus erat vero sed sed, amet duo no diam clita
-            rebum duo, accusam tempor takimata clita stet nonumy rebum est
-            invidunt stet, dolor.
-          </p>
+          <p><%= job.job_desc%></p>
           <h4 class="mb-3">Responsibility</h4>
-          <p>
-            Magna et elitr diam sed lorem. Diam diam stet erat no est est.
-            Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata
-            at diam kasd gubergren elitr dolor
-          </p>
+          <p><%= job.responsibility%></p>
           <ul class="list-unstyled">
             <li>
               <i class="fa fa-angle-right text-primary me-2"></i>Dolor justo
@@ -68,11 +55,7 @@
             </li>
           </ul>
           <h4 class="mb-3">Qualifications</h4>
-          <p>
-            Magna et elitr diam sed lorem. Diam diam stet erat no est est.
-            Accusam sed lorem stet voluptua sit sit at stet consetetur, takimata
-            at diam kasd gubergren elitr dolor
-          </p>
+          <p><%= job.qualification%></p>
           <ul class="list-unstyled">
             <li>
               <i class="fa fa-angle-right text-primary me-2"></i>Dolor justo
@@ -153,20 +136,20 @@
             Jan, 2045
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: 123
-            Position
+            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <%=
+            job.vacancy%> Position
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Job Nature: Full
-            Time
+            <i class="fa fa-angle-right text-primary me-2"></i>Job Nature: <%=
+            job.job_nature%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Salary: $123 -
-            $456
+            <i class="fa fa-angle-right text-primary me-2"></i>Salary: <%=
+            job.salary_range%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Location: New
-            York, USA
+            <i class="fa fa-angle-right text-primary me-2"></i>Location: <%=
+            job.location%>
           </p>
           <p class="m-0">
             <i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01
@@ -175,13 +158,7 @@
         </div>
         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Company Detail</h4>
-          <p class="m-0">
-            Ipsum dolor ipsum accusam stet et et diam dolores, sed rebum
-            sadipscing elitr vero dolores. Lorem dolore elitr justo et no
-            gubergren sadipscing, ipsum et takimata aliquyam et rebum est ipsum
-            lorem diam. Et lorem magna eirmod est et et sanctus et, kasd clita
-            labore.
-          </p>
+          <p class="m-0"><%= job.company_detail%></p>
         </div>
       </div>
     </div>
