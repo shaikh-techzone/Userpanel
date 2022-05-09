@@ -35,238 +35,233 @@
         <div id="tab-1" class="tab-pane fade show p-0 active">
           <% if(colleges.length>0 ){%> <%colleges.forEach(college=>{%>
 
-              <div class="job-item p-4 mb-4">
-                <div class="row g-4">
-                  <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                    <!-- <img
+          <div class="job-item p-4 mb-4">
+            <div class="row g-4">
+              <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                <!-- <img
                   class="flex-shrink-0 img-fluid border rounded"
                   src="img/com-logo-1.jpg"
                   alt=""
                   style="width: 80px; height: 80px"
                 /> -->
-                    <div class="text-start ps-4">
-                      <h5 class="mb-3">
-                        <%= college.name%>
-                      </h5>
-                      <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                        <%= college.city%> , <%= college.country %>
-                      </span>
-                      <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
-                        <%= college.minimum_percent%>
-                      </span>
-                      <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
-                        <%= college.type%>
-                      </span>
-                    </div>
-                  </div>
-                  <div
-                    class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                    <div class="d-flex mb-3">
-                      <!--<a class="btn btn-light btn-square me-3" href=""
-                    ><i class="far fa-heart text-primary"></i
-                  ></a> -->
-                      <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
-                    </div>
-                    <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
-                      Line: 01 Jan, 2045</small>
-                  </div>
+                <div class="text-start ps-4">
+                  <h5 class="mb-3">
+                    <%= college.name%>
+                  </h5>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <%= college.city%> , <%= college.country %>
+                  </span>
+                  <span class="text-truncate me-3"><i class="fas fa-percentage text-primary me-2"></i>
+                    <%= college.minimum_percent%>
+                  </span>
+                  <span class="text-truncate me-0"><i class="fas fa-university text-primary me-2"></i>
+                    <%= college.type%>
+                  </span>
                 </div>
               </div>
-              <%})}%>
+              <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="d-flex mb-3">
+                  <!--<a class="btn btn-light btn-square me-3" href=""
+                    ><i class="far fa-heart text-primary"></i
+                  ></a> -->
+                  <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
+                </div>
+                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                  Line: 01 Jan, 2045</small>
+              </div>
+            </div>
+          </div>
+          <%})}%>
 
-                <!-- <a class="btn btn-primary py-3 px-5" href="/college-list"
+          <!-- <a class="btn btn-primary py-3 px-5" href="/college-list"
             >Browse More colleges</a
           > -->
         </div>
         <div id="tab-2" class="tab-pane fade show p-0">
           <% if(colleges.length>0 ){%> <%colleges.forEach(college=>{%>
-              <%if(college.type== "Private" ){%>
-                <div class="job-item p-4 mb-4">
-                  <div class="row g-4">
-                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                      <!-- <img
+          <%if(college.type== "Private" ){%>
+          <div class="job-item p-4 mb-4">
+            <div class="row g-4">
+              <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                <!-- <img
                   class="flex-shrink-0 img-fluid border rounded"
                   src="img/com-logo-1.jpg"
                   alt=""
                   style="width: 80px; height: 80px"
                 /> -->
-                      <div class="text-start ps-4">
-                        <h5 class="mb-3">
-                          <%= college.name%>
-                        </h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                          <%= college.city%> , <%= college.country %>
-                        </span>
-                        <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
-                          <%= college.minimum_percent%>
-                        </span>
-                        <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
-                          <%= college.type%>
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                      <div class="d-flex mb-3">
-                        <!--<a class="btn btn-light btn-square me-3" href=""
+                <div class="text-start ps-4">
+                  <h5 class="mb-3">
+                    <%= college.name%>
+                  </h5>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <%= college.city%> , <%= college.country %>
+                  </span>
+                  <span class="text-truncate me-3"><i class="fas fa-percentage text-primary me-2"></i>
+                    <%= college.minimum_percent%>
+                  </span>
+                  <span class="text-truncate me-0"><i class="fas fa-university text-primary me-2"></i>
+                    <%= college.type%>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="d-flex mb-3">
+                  <!--<a class="btn btn-light btn-square me-3" href=""
                     ><i class="far fa-heart text-primary"></i
                   ></a> -->
-                        <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
-                      </div>
-                      <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
-                        Line: 01 Jan, 2045</small>
-                    </div>
-                  </div>
+                  <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
                 </div>
+                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                  Line: 01 Jan, 2045</small>
+              </div>
+            </div>
+          </div>
 
-                <%}%>
+          <%}%>
                   <%})}%>
 
-                    <!-- <a class="btn btn-primary py-3 px-5" href=""
+          <!-- <a class="btn btn-primary py-3 px-5" href=""
             >Browse More colleges</a
           > -->
         </div>
         <div id="tab-3" class="tab-pane fade show p-0">
           <% if(colleges.length>0 ){%> <%colleges.forEach(college=>{%>
-              <%if(college.type== "Govt." ){%>
-                <div class="job-item p-4 mb-4">
-                  <div class="row g-4">
-                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                      <!-- <img
+          <%if(college.type== "Govt." ){%>
+          <div class="job-item p-4 mb-4">
+            <div class="row g-4">
+              <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                <!-- <img
                   class="flex-shrink-0 img-fluid border rounded"
                   src="img/com-logo-1.jpg"
                   alt=""
                   style="width: 80px; height: 80px"
                 /> -->
-                      <div class="text-start ps-4">
-                        <h5 class="mb-3">
-                          <%= college.name%>
-                        </h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                          <%= college.city%> , <%= college.country %>
-                        </span>
-                        <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
-                          <%= college.minimum_percent%>
-                        </span>
-                        <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
-                          <%= college.type%>
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                      <div class="d-flex mb-3">
-                        <!--<a class="btn btn-light btn-square me-3" href=""
+                <div class="text-start ps-4">
+                  <h5 class="mb-3">
+                    <%= college.name%>
+                  </h5>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <%= college.city%> , <%= college.country %>
+                  </span>
+                  <span class="text-truncate me-3"><i class="fas fa-percentage text-primary me-2"></i>
+                    <%= college.minimum_percent%>
+                  </span>
+                  <span class="text-truncate me-0"><i class="fas fa-university text-primary me-2"></i>
+                    <%= college.type%>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="d-flex mb-3">
+                  <!--<a class="btn btn-light btn-square me-3" href=""
                     ><i class="far fa-heart text-primary"></i
                   ></a> -->
-                        <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
-                      </div>
-                      <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
-                        Line: 01 Jan, 2045</small>
-                    </div>
-                  </div>
+                  <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
                 </div>
+                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                  Line: 01 Jan, 2045</small>
+              </div>
+            </div>
+          </div>
 
-                <%}%>
+          <%}%>
                   <%})}%>
 
-                    <!-- <a class="btn btn-primary py-3 px-5" href=""
+          <!-- <a class="btn btn-primary py-3 px-5" href=""
             >Browse More colleges</a
           > -->
         </div>
         <div id="tab-4" class="tab-pane fade show p-0">
           <% if(colleges.length>0 ){%> <%colleges.forEach(college=>{%>
-              <%if(college.type== "Semi Govt." ){%>
-                <div class="job-item p-4 mb-4">
-                  <div class="row g-4">
-                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                      <!-- <img
+          <%if(college.type== "Semi Govt." ){%>
+          <div class="job-item p-4 mb-4">
+            <div class="row g-4">
+              <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                <!-- <img
                   class="flex-shrink-0 img-fluid border rounded"
                   src="img/com-logo-1.jpg"
                   alt=""
                   style="width: 80px; height: 80px"
                 /> -->
-                      <div class="text-start ps-4">
-                        <h5 class="mb-3">
-                          <%= college.name%>
-                        </h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                          <%= college.city%> , <%= college.country %>
-                        </span>
-                        <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
-                          <%= college.minimum_percent%>
-                        </span>
-                        <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
-                          <%= college.type%>
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                      <div class="d-flex mb-3">
-                        <!--<a class="btn btn-light btn-square me-3" href=""
+                <div class="text-start ps-4">
+                  <h5 class="mb-3">
+                    <%= college.name%>
+                  </h5>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <%= college.city%> , <%= college.country %>
+                  </span>
+                  <span class="text-truncate me-3"><i class="fas fa-percentage text-primary me-2"></i>
+                    <%= college.minimum_percent%>
+                  </span>
+                  <span class="text-truncate me-0"><i class="fas fa-university text-primary me-2"></i>
+                    <%= college.type%>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="d-flex mb-3">
+                  <!--<a class="btn btn-light btn-square me-3" href=""
                     ><i class="far fa-heart text-primary"></i
                   ></a> -->
-                        <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
-                      </div>
-                      <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
-                        Line: 01 Jan, 2045</small>
-                    </div>
-                  </div>
+                  <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
                 </div>
+                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                  Line: 01 Jan, 2045</small>
+              </div>
+            </div>
+          </div>
 
-                <%}%>
+          <%}%>
                   <%})}%>
 
-                    <!-- <a class="btn btn-primary py-3 px-5" href=""
+          <!-- <a class="btn btn-primary py-3 px-5" href=""
             >Browse More colleges</a
           > -->
         </div>
         <div id="tab-5" class="tab-pane fade show p-0">
           <% if(colleges.length>0 ){%> <%colleges.forEach(college=>{%>
-              <%if(college.type== "Semi Private" ){%>
-                <div class="job-item p-4 mb-4">
-                  <div class="row g-4">
-                    <div class="col-sm-12 col-md-8 d-flex align-items-center">
-                      <!-- <img
+          <%if(college.type== "Semi Private" ){%>
+          <div class="job-item p-4 mb-4">
+            <div class="row g-4">
+              <div class="col-sm-12 col-md-8 d-flex align-items-center">
+                <!-- <img
                   class="flex-shrink-0 img-fluid border rounded"
                   src="img/com-logo-1.jpg"
                   alt=""
                   style="width: 80px; height: 80px"
                 /> -->
-                      <div class="text-start ps-4">
-                        <h5 class="mb-3">
-                          <%= college.name%>
-                        </h5>
-                        <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                          <%= college.city%> , <%= college.country %>
-                        </span>
-                        <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
-                          <%= college.minimum_percent%>
-                        </span>
-                        <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
-                          <%= college.type%>
-                        </span>
-                      </div>
-                    </div>
-                    <div
-                      class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
-                      <div class="d-flex mb-3">
-                        <!--<a class="btn btn-light btn-square me-3" href=""
+                <div class="text-start ps-4">
+                  <h5 class="mb-3">
+                    <%= college.name%>
+                  </h5>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <%= college.city%> , <%= college.country %>
+                  </span>
+                  <span class="text-truncate me-3"><i class="fas fa-percentage text-primary me-2"></i>
+                    <%= college.minimum_percent%>
+                  </span>
+                  <span class="text-truncate me-0"><i class="fas fa-university text-primary me-2"></i>
+                    <%= college.type%>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
+                <div class="d-flex mb-3">
+                  <!--<a class="btn btn-light btn-square me-3" href=""
                     ><i class="far fa-heart text-primary"></i
                   ></a> -->
-                        <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
-                      </div>
-                      <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
-                        Line: 01 Jan, 2045</small>
-                    </div>
-                  </div>
+                  <a class="btn btn-primary" href="/college-detail/<%= college._id%>">Apply Now</a>
                 </div>
+                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                  Line: 01 Jan, 2045</small>
+              </div>
+            </div>
+          </div>
 
-                <%}%>
+          <%}%>
                   <%})}%>
 
-                    <!-- <a class="btn btn-primary py-3 px-5" href=""
+          <!-- <a class="btn btn-primary py-3 px-5" href=""
             >Browse More colleges</a
           > -->
         </div>
