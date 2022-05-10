@@ -118,14 +118,13 @@
         <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Internship Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= internships.createdAt.getDate() %>-<%= internships.createdAt.getMonth()+1 %>-<%=internships.createdAt.getFullYear() %>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <%= internships.vacancy%> Position
+            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <%= internships.vacancy%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Internships Nature: <%= internships.internship_nature%>
+            <i class="fa fa-angle-right text-primary me-2"></i>Internship Nature: <%= internships.internship_nature%>
           </p>
           <p>
             <i class="fa fa-angle-right text-primary me-2"></i>Salary: <%= internships.salary_range%>
@@ -134,8 +133,7 @@
             <i class="fa fa-angle-right text-primary me-2"></i>Location: <%= internships.location%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= internships.deadline%>
           </p>
         </div>
         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">

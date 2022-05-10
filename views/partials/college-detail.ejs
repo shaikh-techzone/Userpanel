@@ -49,10 +49,9 @@
 
       <div class="col-lg-4">
         <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
-          <h4 class="mb-4">college Summary</h4>
+          <h4 class="mb-4">College Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= college.createdAt.getDate() %>-<%= college.createdAt.getMonth()+1 %>-<%=college.createdAt.getFullYear() %>
           </p>
           <p>
             <i class="fa fa-angle-right text-primary me-2"></i>Available Seats:
@@ -71,8 +70,7 @@
             college.eligibility%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= college.deadline%>
           </p>
         </div>
         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">

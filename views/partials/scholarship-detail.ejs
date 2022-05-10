@@ -51,8 +51,7 @@
         <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Scholarship Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= scholarships.createdAt.getDate() %>-<%= scholarships.createdAt.getMonth()+1 %>-<%=scholarships.createdAt.getFullYear() %>
           </p>
           <p>
             <i class="fa fa-angle-right text-primary me-2"></i>Available Seats:
@@ -71,12 +70,11 @@
             scholarships.eligibility%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= scholarships.deadline%>
           </p>
         </div>
         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
-          <h4 class="mb-4">Scholoarship Detail</h4>
+          <h4 class="mb-4">Scholarship Detail</h4>
           <p class="m-0"><%= scholarships.about_scholarship%></p>
         </div>
       </div>

@@ -51,15 +51,14 @@
         <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">University Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= university.createdAt.getDate() %>-<%= university.createdAt.getMonth()+1 %>-<%=university.createdAt.getFullYear() %>
           </p>
           <p>
             <i class="fa fa-angle-right text-primary me-2"></i>Available Seats:
             <%= university.seats%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Scholarship Type:
+            <i class="fa fa-angle-right text-primary me-2"></i>University Type:
             <%= university.type%>
           </p>
           <p>
@@ -71,8 +70,8 @@
             university.eligibility%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: 01
-            Jan, 2045
+            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= university.deadline%>
+
           </p>
         </div>
         <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
