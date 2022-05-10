@@ -19,6 +19,7 @@ const collegedetail = require("./routes/college-detail");
 const internshipdetail = require("./routes/internship-detail");
 const scholarshipdetail = require("./routes/scholarship-detail");
 const unidetail = require("./routes/university-detail");
+const contact = require("./routes/contact");
 
 //Creating express app
 const app = express();
@@ -67,3 +68,4 @@ app.use("/", collegedetail);
 app.use("/", internshipdetail);
 app.use("/", scholarshipdetail);
 app.use("/", unidetail);
+app.use("/", contact);

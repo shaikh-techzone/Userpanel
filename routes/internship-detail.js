@@ -14,7 +14,7 @@ router.get("/internship-detail/:id", async (req, res) => {
     .catch((err) => {
       console.log(err);
     });
-  res.render("internship-detail", { title: "Internships Detail", internships });
+  res.render("internship-detail", { title: "Internship Detail", internships });
 });
 
 module.exports = router;
