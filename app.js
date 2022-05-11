@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const flash = require("connect-flash");
+const env = require("dotenv");
 
 //Importing Routes
 const home = require("./routes/home");
@@ -23,7 +24,7 @@ const contact = require("./routes/contact");
 
 //Creating express app
 const app = express();
-
+env.config();
 //Declaring port
 const port = process.env.port || 8070;
 
@@ -41,8 +42,7 @@ app.use(bodyParser.json());
 app.use(flash());
 
 //Database URI
-const dbURI =
-  "mongodb+srv://wicked:test12345@mongoprojects.8mmhw.mongodb.net/fyp?retryWrites=true&w=majority";
+const dbURI = process.env.DB_URI;
 
 //Connection to DB
 mongoose
