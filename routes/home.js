@@ -9,6 +9,7 @@ router.get("/", async (req, res) => {
   await JOBS.find()
     .then((result) => {
       jobs = result;
+      console.log(jobs);
     })
     .catch((err) => {
       console.log(err);

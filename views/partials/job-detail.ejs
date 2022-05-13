@@ -7,22 +7,21 @@
 
           <div class="text-start ps-4">
             <h3 class="mb-3"><%= job.title%></h3>
-            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i><%=
-              job.location%></span>
-            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i><%=
+            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt custom-blue-i me-2"></i><%=job.city%> , <%=job.location%></span>
+            <span class="text-truncate me-3"><i class="far fa-clock custom-blue-i me-2"></i><%=
               job.job_nature%></span>
-            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i><%=
+            <span class="text-truncate me-0"><i class="far fa-money-bill-alt custom-blue-i me-2"></i><%=
               job.salary_range%></span>
           </div>
         </div>
 
         <div class="mb-5">
-          <h4 class="mb-3">Job description</h4>
+          <h4 class="mb-3">Job Description</h4>
           <p><%= job.job_desc%></p>
           <h4 class="mb-3">Responsibility</h4>
           <p><%= job.responsibility%></p>
 
-          <h4 class="mb-3">Qualifications</h4>
+          <h4 class="mb-3">Qualification</h4>
           <p><%= job.qualification%></p>
           <ul class="list-unstyled">
 
@@ -48,7 +47,7 @@
                 <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary w-100" type="submit">
+                <button class="btn custom-blue w-100" type="submit">
                   Apply Now
                 </button>
               </div>
@@ -58,32 +57,32 @@
       </div>
 
       <div class="col-lg-4">
-        <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
-          <h4 class="mb-4">Job Summery</h4>
+        <div class="box-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
+          <h4 class="mb-4">Job Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= job.createdAt.getDate() %>-<%= job.createdAt.getMonth()+1 %>-<%=job.createdAt.getFullYear() %>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Published On: <%= job.createdAt.getDate() %>-<%= job.createdAt.getMonth()+1 %>-<%=job.createdAt.getFullYear() %>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <%=
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Vacancy: <%=
             job.vacancy%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Job Nature: <%=
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Job Nature: <%=
             job.job_nature%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Salary: <%=
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Salary: <%=
             job.salary_range%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Location: <%=
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Location: <%=
             job.location%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= job.deadline%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Date Line: <%= job.deadline%>
           </p>
         </div>
-        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
+        <div class="box-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Company Detail</h4>
           <p class="m-0"><%= job.company_detail%></p>
         </div>

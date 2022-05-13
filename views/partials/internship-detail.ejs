@@ -9,13 +9,13 @@
             <h3 class="mb-3">
               <%= internships.title%>
             </h3>
-            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
+            <span class="text-truncate me-3"><i class="fa fa-map-marker-alt custom-blue-i me-2"></i>
               <%= internships.location%>
             </span>
-            <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
+            <span class="text-truncate me-3"><i class="far fa-clock custom-blue-i me-2"></i>
               <%= internships.internship_nature%>
             </span>
-            <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
+            <span class="text-truncate me-0"><i class="far fa-money-bill-alt custom-blue-i me-2"></i>
               <%= internships.salary_range%>
             </span>
           </div>
@@ -31,7 +31,7 @@
             <%= internships.responsibility%>
           </p>
 
-          <h4 class="mb-3">Qualifications</h4>
+          <h4 class="mb-3">Qualification</h4>
           <p>
             <%= internships.qualification%>
           </p>
@@ -59,7 +59,7 @@
                 <textarea class="form-control" rows="5" placeholder="Coverletter"></textarea>
               </div>
               <div class="col-12">
-                <button class="btn btn-primary w-100" type="submit">
+                <button class="btn custom-blue w-100" type="submit">
                   Apply Now
                 </button>
               </div>
@@ -69,28 +69,28 @@
       </div>
 
       <div class="col-lg-4">
-        <div class="bg-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
+        <div class="box-light rounded p-5 mb-4 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Internship Summary</h4>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Published On: <%= internships.createdAt.getDate() %>-<%= internships.createdAt.getMonth()+1 %>-<%=internships.createdAt.getFullYear() %>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Published On: <%= internships.createdAt.getDate() %>-<%= internships.createdAt.getMonth()+1 %>-<%=internships.createdAt.getFullYear() %>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Vacancy: <%= internships.vacancy%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Vacancy: <%= internships.vacancy%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Internship Nature: <%= internships.internship_nature%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Internship Nature: <%= internships.internship_nature%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Salary: <%= internships.salary_range%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Salary: <%= internships.salary_range%>
           </p>
           <p>
-            <i class="fa fa-angle-right text-primary me-2"></i>Location: <%= internships.location%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Location: <%= internships.location%>
           </p>
           <p class="m-0">
-            <i class="fa fa-angle-right text-primary me-2"></i>Date Line: <%= internships.deadline%>
+            <i class="fa fa-angle-right custom-blue-i me-2"></i>Date Line: <%= internships.deadline%>
           </p>
         </div>
-        <div class="bg-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
+        <div class="box-light rounded p-5 wow slideInUp" data-wow-delay="0.1s">
           <h4 class="mb-4">Internship Detail</h4>
           <p class="m-0">
             <%= internships.company_detail%>

@@ -33,30 +33,30 @@
                   <h5 class="mb-3">
                     <%= job.title%>
                   </h5>
-                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    <%= job.location%>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt custom-blue-i me-2"></i>
+                    <%=job.city%> , <%=job.location%>
                   </span>
-                  <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
+                  <span class="text-truncate me-3"><i class="far fa-clock custom-blue-i me-2"></i>
                     <%= job.job_nature%>
                   </span>
-                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
+                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt custom-blue-i me-2"></i>
                     <%= job.salary_range%>
                   </span>
                 </div>
               </div>
               <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                 <div class="d-flex mb-3">
-                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> -->
-                  <a class="btn btn-primary" href="/job-detail/<%= job._id%>">Apply Now</a>
+                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart custom-blue-i"></i></a> -->
+                  <a class="btn custom-blue text-white" href="/job-detail/<%= job._id%>">Apply Now</a>
                 </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                <small class="text-truncate"><i class="far fa-calendar-alt custom-blue-i me-2"></i>Date
                   Line: <%= job.deadline%></small>
               </div>
             </div>
           </div>
           <%})}%>
 
-          <a class="btn btn-primary py-3 px-5" href="/job-list">Browse More Jobs</a>
+          <a class="btn custom-blue text-white py-3 px-5" href="/job-list">Browse More Jobs</a>
         </div>
         <div id="tab-2" class="tab-pane fade show p-0">
           <% if(jobs.length>0 ){%> <%jobs.forEach(job=>{%>
@@ -69,23 +69,23 @@
                   <h5 class="mb-3">
                     <%= job.title%>
                   </h5>
-                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    <%= job.location%>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt custom-blue-i me-2"></i>
+                    <%=job.city%> , <%=job.location%>
                   </span>
-                  <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
+                  <span class="text-truncate me-3"><i class="far fa-clock custom-blue-i me-2"></i>
                     <%= job.job_nature%>
                   </span>
-                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
+                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt custom-blue-i me-2"></i>
                     <%= job.salary_range%>
                   </span>
                 </div>
               </div>
               <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                 <div class="d-flex mb-3">
-                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> -->
-                  <a class="btn btn-primary" href="/job-detail/<%= job._id%>">Apply Now</a>
+                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart custom-blue-i"></i></a> -->
+                  <a class="btn custom-blue text-white" href="/job-detail/<%= job._id%>">Apply Now</a>
                 </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                <small class="text-truncate"><i class="far fa-calendar-alt custom-blue-i me-2"></i>Date
                   Line: <%= job.deadline%></small>
               </div>
             </div>
@@ -94,7 +94,7 @@
           <%}%>
                   <%})}%>
 
-          <a class="btn btn-primary py-3 px-5" href="">Browse More Jobs</a>
+          <a class="btn custom-blue text-white py-3 px-5" href="">Browse More Jobs</a>
         </div>
         <div id="tab-3" class="tab-pane fade show p-0">
           <% if(jobs.length>0 ){%> <%jobs.forEach(job=>{%>
@@ -107,23 +107,23 @@
                   <h5 class="mb-3">
                     <%= job.title%>
                   </h5>
-                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt text-primary me-2"></i>
-                    <%= job.location%>
+                  <span class="text-truncate me-3"><i class="fa fa-map-marker-alt custom-blue-i me-2"></i>
+                    <%=job.city%> , <%=job.location%>
                   </span>
-                  <span class="text-truncate me-3"><i class="far fa-clock text-primary me-2"></i>
+                  <span class="text-truncate me-3"><i class="far fa-clock custom-blue-i me-2"></i>
                     <%= job.job_nature%>
                   </span>
-                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt text-primary me-2"></i>
+                  <span class="text-truncate me-0"><i class="far fa-money-bill-alt custom-blue-i me-2"></i>
                     <%= job.salary_range%>
                   </span>
                 </div>
               </div>
               <div class="col-sm-12 col-md-4 d-flex flex-column align-items-start align-items-md-end justify-content-center">
                 <div class="d-flex mb-3">
-                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart text-primary"></i></a> -->
-                  <a class="btn btn-primary" href="/job-detail/<%= job._id%>">Apply Now</a>
+                  <!-- <a class="btn btn-light btn-square me-3" href=""><i class="far fa-heart custom-blue-i"></i></a> -->
+                  <a class="btn custom-blue text-white" href="/job-detail/<%= job._id%>">Apply Now</a>
                 </div>
-                <small class="text-truncate"><i class="far fa-calendar-alt text-primary me-2"></i>Date
+                <small class="text-truncate"><i class="far fa-calendar-alt custom-blue-i me-2"></i>Date
                   Line: <%= job.deadline%></small>
               </div>
             </div>
@@ -131,7 +131,7 @@
 
           <%}%>
                   <%})}%>
-          <a class="btn btn-primary py-3 px-5" href="/job-list/#tab2">Browse More Jobs</a>
+          <a class="btn custom-blue text-white py-3 px-5" href="/job-list/#tab2">Browse More Jobs</a>
         </div>
       </div>
     </div>
